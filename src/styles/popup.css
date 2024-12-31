@@ -1,3 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #root-container {
-  z-index: 10000000;
+  width: 200px;
+  background: #171717;
+  user-select: none;
+}
+
+/* radio */
+#root-container .radio {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+#root-container .radio:hover {
+  background-color: rgba(29, 233, 182, 0.3);
+}
+
+#root-container .radio>span {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #171717,
+    0 0 0 4px #999999;
+}
+
+#root-container .checked span {
+  background: #1de9b6;
+  box-shadow: 0 0 0 2px #171717,
+    0 0 0 4px #1de9b6;
+}
+
+/* item */
+#root-container>.item {
+  height: 48px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+#root-container>.item:hover {
+  background: #262626;
+}
+
+#root-container>.item.checked {
+  background: #666666;
+}
+
+#root-container>.direct-this {
+  border-top: 1px solid #666666;
 }

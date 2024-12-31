@@ -7,17 +7,13 @@
     "service_worker": "serviceWorker.js"
   },
   "permissions": [
-    "storage",
-    "offscreen",
-    "alarms",
-    "tabs"
+    "tabs",
+    "proxy"
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "/assets/*",
-        "/styles/*",
-        "/fonts/*"
+        "/styles/*"
       ],
       "matches": [
         "*://*/*"
@@ -25,6 +21,7 @@
     }
   ],
   "action": {
+    "default_title": "Proxy Switch",
     "default_popup": "popup.html"
   }
 }

@@ -11,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|ts)x?$/,
-        use: ['babel-loader'],
+        test: /\.tsx?$/,
+        use: ['ts-loader'],
         exclude: /node_modules/
       },
       {
@@ -22,22 +22,6 @@ module.exports = {
       {
         test: /\.(json)$/i,
         type: 'asset/resource'
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 200000,
-              encoding: 'base64'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
       }
     ]
   },
