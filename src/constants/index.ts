@@ -29,7 +29,7 @@ export const Config = [
     mode: ProxyMode.fixed,
     color: '#ffee99',
     singleProxy: { scheme: 'socks5', host: '127.0.0.1', port: 7890 },
-    bypassList: ['127.0.0.1', '[::1]', '192.168.1.1/16', 'localhost', '*.baidu.com']
+    bypassList: ['127.0.0.1', '[::1]', '192.168.1.1/16', 'localhost', '*.baidu.com', '*.youdao.com']
   },
   {
     id: 4,
